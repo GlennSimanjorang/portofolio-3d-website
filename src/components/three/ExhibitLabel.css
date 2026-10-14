@@ -1,0 +1,124 @@
+.exhibit-plaque {
+  --exhibit-font-title: Georgia, 'Times New Roman', serif;
+  --exhibit-font-text: 'Trebuchet MS', Verdana, sans-serif;
+  --exhibit-title-size: clamp(18px, 2.6vh, 22px);
+  --exhibit-featured-title-size: clamp(26px, 3.7vh, 32px);
+  --exhibit-meta-size: 13px;
+  --exhibit-body-size: 14px;
+  --exhibit-title-leading: 1.15;
+  --exhibit-text-leading: 1.45;
+  --exhibit-space-small: 6px;
+  --exhibit-space-medium: 12px;
+  --exhibit-space-large: 18px;
+  --exhibit-surface: #eee9df;
+  --exhibit-ink: #242b31;
+  --exhibit-secondary: #454d47;
+  --exhibit-rule: #92998f;
+
+  /* The fixed vertical camera FOV makes anchor spacing proportional to height. */
+  --exhibit-plaque-width: min(192px, 21.5vh);
+  --exhibit-featured-width: min(220px, 24.5vh);
+
+  box-sizing: border-box;
+  width: var(--exhibit-plaque-width);
+  padding: var(--exhibit-space-medium);
+  border: 0;
+  border-top: 2px solid var(--exhibit-rule);
+  border-radius: 0;
+  background: var(--exhibit-surface);
+  color: var(--exhibit-ink);
+  font-family: var(--exhibit-font-text);
+  font-weight: 400;
+  text-align: left;
+  overflow-wrap: break-word;
+  user-select: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+.exhibit-plaque:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.exhibit-plaque__title,
+.exhibit-plaque__marker,
+.exhibit-plaque__description {
+  display: block;
+}
+
+.exhibit-plaque__title {
+  margin: 0;
+  font-family: var(--exhibit-font-title);
+  font-size: var(--exhibit-title-size);
+  font-weight: 400;
+  line-height: var(--exhibit-title-leading);
+  text-wrap: balance;
+}
+
+.exhibit-plaque__marker {
+  margin: 0 0 var(--exhibit-space-medium);
+  font-size: var(--exhibit-meta-size);
+  font-weight: 600;
+  line-height: var(--exhibit-text-leading);
+}
+
+.exhibit-plaque__metadata {
+  display: grid;
+  gap: var(--exhibit-space-small);
+  margin-top: var(--exhibit-space-medium);
+  color: var(--exhibit-secondary);
+  font-size: var(--exhibit-meta-size);
+  line-height: var(--exhibit-text-leading);
+}
+
+.exhibit-plaque__year {
+  font-variant-numeric: tabular-nums;
+}
+
+.exhibit-plaque__description {
+  margin: var(--exhibit-space-medium) 0 0;
+  color: var(--exhibit-secondary);
+  font-size: var(--exhibit-body-size);
+  line-height: var(--exhibit-text-leading);
+  text-wrap: pretty;
+}
+
+.exhibit-plaque[data-featured='true'] {
+  width: var(--exhibit-featured-width);
+  padding: var(--exhibit-space-large);
+  border-top: 4px double var(--exhibit-ink);
+}
+
+.exhibit-plaque[data-featured='true'] .exhibit-plaque__title {
+  font-size: var(--exhibit-featured-title-size);
+}
+
+.exhibit-plaque[data-featured='true'] .exhibit-plaque__metadata,
+.exhibit-plaque[data-featured='true'] .exhibit-plaque__description {
+  margin-top: var(--exhibit-space-large);
+}
+
+.exhibit-plaque[data-state='hovered'] {
+  outline: 1px solid var(--exhibit-ink);
+  outline-offset: -4px;
+}
+
+.exhibit-plaque[data-state='selected'] {
+  outline: 2px solid var(--exhibit-ink);
+  outline-offset: -5px;
+}
+
+.exhibit-plaque:focus-visible {
+  outline: 3px solid var(--exhibit-ink);
+  outline-offset: -5px;
+}
+
+@media (max-height: 700px) {
+  .exhibit-plaque {
+    --exhibit-featured-title-size: 22px;
+    --exhibit-space-small: 4px;
+    --exhibit-space-medium: 10px;
+    --exhibit-space-large: 10px;
+  }
+}

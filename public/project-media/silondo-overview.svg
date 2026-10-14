@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Placeholder SILONDO dashboard preview">
+  <rect width="960" height="540" fill="#e9eef2"/>
+  <rect width="960" height="72" fill="#173b50"/>
+  <text x="44" y="46" fill="#fff" font-family="Arial, sans-serif" font-size="27" font-weight="bold">SILONDO</text>
+  <text x="724" y="44" fill="#c8dbe5" font-family="Arial, sans-serif" font-size="16">Dashboard preview</text>
+  <rect x="34" y="104" width="892" height="400" rx="12" fill="#fff"/>
+  <text x="66" y="156" fill="#173b50" font-family="Arial, sans-serif" font-size="25" font-weight="bold">Digital services dashboard</text>
+  <text x="66" y="184" fill="#607785" font-family="Arial, sans-serif" font-size="15">Placeholder image · replace with a project screenshot</text>
+  <rect x="66" y="218" width="255" height="112" rx="9" fill="#e1f1f4"/>
+  <rect x="352" y="218" width="255" height="112" rx="9" fill="#e1f1f4"/>
+  <rect x="638" y="218" width="255" height="112" rx="9" fill="#e1f1f4"/>
+  <text x="88" y="261" fill="#2b6474" font-family="Arial, sans-serif" font-size="16">Requests</text>
+  <text x="374" y="261" fill="#2b6474" font-family="Arial, sans-serif" font-size="16">Services</text>
+  <text x="660" y="261" fill="#2b6474" font-family="Arial, sans-serif" font-size="16">Updates</text>
+  <rect x="66" y="362" width="827" height="20" rx="5" fill="#e9eef2"/>
+  <rect x="66" y="399" width="660" height="16" rx="5" fill="#e9eef2"/>
+  <rect x="66" y="432" width="745" height="16" rx="5" fill="#e9eef2"/>
+</svg>

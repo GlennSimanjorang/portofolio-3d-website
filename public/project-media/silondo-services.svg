@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Placeholder SILONDO services preview">
+  <rect width="960" height="540" fill="#e9eef2"/>
+  <rect width="960" height="72" fill="#173b50"/>
+  <text x="44" y="46" fill="#fff" font-family="Arial, sans-serif" font-size="27" font-weight="bold">SILONDO</text>
+  <text x="746" y="44" fill="#c8dbe5" font-family="Arial, sans-serif" font-size="16">Services preview</text>
+  <rect x="34" y="104" width="892" height="400" rx="12" fill="#fff"/>
+  <text x="66" y="156" fill="#173b50" font-family="Arial, sans-serif" font-size="25" font-weight="bold">Explore services</text>
+  <text x="66" y="184" fill="#607785" font-family="Arial, sans-serif" font-size="15">Placeholder image · replace with a project screenshot</text>
+  <rect x="66" y="220" width="827" height="65" rx="9" fill="#e1f1f4"/>
+  <rect x="66" y="303" width="827" height="65" rx="9" fill="#e1f1f4"/>
+  <rect x="66" y="386" width="827" height="65" rx="9" fill="#e1f1f4"/>
+  <circle cx="106" cy="252" r="14" fill="#72aab7"/>
+  <circle cx="106" cy="335" r="14" fill="#72aab7"/>
+  <circle cx="106" cy="418" r="14" fill="#72aab7"/>
+  <rect x="142" y="244" width="288" height="15" rx="4" fill="#8bb6c1"/>
+  <rect x="142" y="327" width="338" height="15" rx="4" fill="#8bb6c1"/>
+  <rect x="142" y="410" width="260" height="15" rx="4" fill="#8bb6c1"/>
+</svg>

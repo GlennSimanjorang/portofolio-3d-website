@@ -17,18 +17,21 @@ Read:
 - `docs/DESIGN.md`
 - `docs/TASKS.md`
 
+Read `docs/DESIGN_SYSTEM.md` and `docs/EXPERIENCE.md` when changing the visitor-facing scene.
+
 Inspect the current scene implementation before modifying it.
 
 ## Scene Rules
 
 - Keep scene components small and focused.
+- Keep hall geometry, exhibit placement, camera control, and project content in their existing separate layers unless the requested change requires otherwise.
 - Keep HTML UI separate from 3D scene logic.
 - Avoid unnecessary `useFrame`.
-- Avoid recreating geometry or materials every render.
+- Reuse or memoize geometry and materials when repeated or expensive; avoid recreating them every render.
 - Prefer reusable components.
 - Avoid premature post-processing.
 - Avoid excessive realtime shadows.
-- Keep mobile performance in mind.
+- Preserve the compact viewport fallback and keep mobile performance in mind.
 - Do not add complexity without a clear need.
 
 ## React Three Fiber
@@ -58,8 +61,8 @@ After changes:
 1. Run typecheck.
 2. Run lint.
 3. Run build.
-4. Visually inspect the scene.
-5. Check browser console.
+4. Visually inspect desktop and compact views when a browser is available.
+5. Check the browser console when a browser is available.
 6. Review git diff.
 
 ## Report
